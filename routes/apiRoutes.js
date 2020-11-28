@@ -49,9 +49,4 @@ module.exports = function (app) {
     );
   });
 
-  //  app.post("/api/notes/:id", function(req, res) {
-  //   res.json(notesData);
-  // })
-
-  //  console.log(notesData);
 };
