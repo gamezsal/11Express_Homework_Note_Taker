@@ -61,7 +61,12 @@
           noteList: $(".list-container .list-group").val().trim(),
         };
 
-        console.log(newNote);
+        $.post("api/notes", newNote,
+        function(){
+          console.log(newNote);
+        });
+
+
       });
     </script>
   </body>

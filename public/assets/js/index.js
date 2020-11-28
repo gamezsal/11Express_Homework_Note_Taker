@@ -14,6 +14,7 @@ const getNotes = () => {
     method: "GET",
   });
 };
+// console.log(activeNote);
 
 // A function for saving a note to the db
 const saveNote = (note) => {
@@ -149,3 +150,4 @@ $noteText.on("keyup", handleRenderSaveBtn);
 
 // Gets and renders the initial list of notes
 getAndRenderNotes();
+console.log(getAndRenderNotes);

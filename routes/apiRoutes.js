@@ -22,7 +22,13 @@ module.exports = function(app) {
   });
 
   app.post("/api/notes", function(req, res) {
+    notesData.push(req.body);
     res.json(notesData);
  });
- console.log(notesData);
+
+//  app.post("/api/notes/:id", function(req, res) {
+//   res.json(notesData);
+// })
+
+//  console.log(notesData);
 };
