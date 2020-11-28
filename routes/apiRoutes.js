@@ -2,7 +2,7 @@
 // LOAD DATA
 // We are linking our routes to a series of "data" sources.
 // ===============================================================================
-
+const fs = require("fs");
 var notesData = require("../db/db.json");
 
 // ===============================================================================
@@ -17,6 +17,7 @@ module.exports = function(app) {
   // ---------------------------------------------------------------------------
 
   app.get("/api/notes", function(req, res) {
+    console.log(notesData);
     res.json(notesData);
   });
 
