@@ -5,8 +5,6 @@
 
 var notesData = require("../db/db.json");
 
-
-
 // ===============================================================================
 // ROUTING
 // ===============================================================================
@@ -24,4 +22,6 @@ module.exports = function(app) {
 
   app.post("/api/notes", function(req, res) {
     res.json(notesData);
-  });
+ });
+ console.log(notesData);
+};
