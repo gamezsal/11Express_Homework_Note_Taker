@@ -47,27 +47,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="/assets/js/index.js"></script>
 
-    <!-- Handles how Notes Data gets saved on click  -->
-
-    <script type="text/javascript">
-      $(".submit").on("click", function (event) {
-        event.preventDefault();
-
-        var newNote = {
-          noteTitle: $(".note-title").val().trim(),
-          noteText: $(".note-textarea").val().trim(),
-          saveNoteBtn: $(".save-note"),
-          newNoteBtn: $(".new-note"),
-          noteList: $(".list-container .list-group").val().trim(),
-        };
-
-        $.post("api/notes", newNote,
-        function(){
-          console.log(newNote);
-        });
-
-
-      });
-    </script>
   </body>
 </html>
